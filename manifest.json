@@ -24,11 +24,40 @@
       }
     },
     {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/*"
+      }
+    },
+    {
       "name": "colossus-fire-event"
     },
     {
       "name": "colossus-write-logs"
     }
   ],
+  "settingsSchema": {
+    "title": "Surya K",
+    "type": "object",
+    "access": "public",
+    "properties": {
+      "apiKey": {
+        "title": "API Key",
+        "description": "Enter the API Key ",
+        "type": "string"
+      },
+      "appToken": {
+        "title": "App Token Key",
+        "description": "Enter the app token",
+        "type": "string"
+      },
+      "recaptchaKey": {
+        "title": "RECAPTCHA Site Key",
+        "description": "Enter the site key",
+        "type": "string"
+      }
+    }
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -9,6 +9,14 @@
     "status": {
       "path": "/_v/status/:code",
       "public": true
+    },
+    "formData": {
+      "path": "/formData",
+      "public": true
+    },
+    "captcha": {
+      "path": "/getCaptcha",
+      "public": true
     }
   }
 }
